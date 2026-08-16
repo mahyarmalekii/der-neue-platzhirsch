@@ -46,7 +46,12 @@ export function MenuSection() {
     <section id="karte" className="relative bg-background px-6 py-28 md:px-16">
       <div ref={ref} className="mx-auto max-w-6xl">
         <div className="mb-14 flex flex-wrap items-end justify-between gap-6 border-b border-border pb-6">
-          <h2 className="display text-[14vw] leading-none md:text-[8vw]">Die Karte</h2>
+          <div>
+            <h2 className="display text-[14vw] leading-none md:text-[8vw]">Die Karte</h2>
+            <p className="mt-2 text-[11px] uppercase tracking-widest text-muted-foreground/70">
+              Interactive Menu Concept by <a href="https://gubly.xyz/" target="_blank" rel="noreferrer" className="text-ember hover:underline">Gubly (gubly.xyz)</a>
+            </p>
+          </div>
           <p className="max-w-xs text-sm text-muted-foreground">
             Täglich wechselnde Tageskarte, immer mit vegetarischer Option. Hochstühle für die
             Kleinen stehen bereit.

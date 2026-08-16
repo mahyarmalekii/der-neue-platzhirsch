@@ -29,6 +29,13 @@ export function SchnitzelScene() {
           }}
         />
 
+        <div className="absolute top-8 right-6 z-20 hidden sm:flex items-center gap-2 rounded-full border border-border/60 bg-soot/80 px-3 py-1 text-[10px] uppercase tracking-widest text-muted-foreground backdrop-blur-sm">
+          <span>3D Experience by</span>
+          <a href="https://gubly.xyz/" target="_blank" rel="noreferrer" className="text-ember font-bold hover:underline">
+            gubly.xyz
+          </a>
+        </div>
+
         <h2 className="display pointer-events-none absolute inset-x-0 text-center text-[18vw] text-outline opacity-30">
           Schnitzel
         </h2>

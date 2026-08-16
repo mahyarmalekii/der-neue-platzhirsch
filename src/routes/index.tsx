@@ -77,6 +77,10 @@ function Hero() {
               />
               <span className="opacity-30 hidden sm:inline">/</span>
               <a href="tel:+491725866773" className="transition-colors hover:text-ember hidden sm:inline py-1">Kontakt</a>
+              <span className="opacity-30 hidden md:inline">/</span>
+              <a href="https://gubly.xyz/" target="_blank" rel="noreferrer" className="text-ember font-bold hover:underline hidden md:inline py-1">
+                gubly.xyz
+              </a>
             </div>
           </nav>
 

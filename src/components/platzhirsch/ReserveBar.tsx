@@ -31,8 +31,11 @@ export function ReserveBar() {
             <span className="text-[11px] sm:text-xs font-semibold tracking-wider text-cream uppercase">
               Tisch frei?
             </span>
-            <span className="hidden sm:inline text-[10px] text-muted-foreground">
-              Täglich ab 12:00 geöffnet
+            <span className="text-[10px] text-muted-foreground">
+              <span className="hidden sm:inline">Täglich ab 12:00 · </span>
+              <a href="https://gubly.xyz/" target="_blank" rel="noreferrer" className="text-ember hover:underline">
+                gubly.xyz
+              </a>
             </span>
           </div>
         </div>

@@ -32,7 +32,12 @@ export function KitchenVideo() {
         </div>
 
         <div className="relative flex h-full flex-col items-start justify-end gap-4 px-6 pb-28 md:px-16">
-          <span className="text-xs uppercase tracking-[0.35em] text-ember">Aus der Küche</span>
+          <div className="flex items-center gap-3">
+            <span className="text-xs uppercase tracking-[0.35em] text-ember">Aus der Küche</span>
+            <span className="text-[10px] text-muted-foreground/60 uppercase tracking-widest hidden sm:inline">
+              · Art Direction by <a href="https://gubly.xyz/" target="_blank" rel="noreferrer" className="text-ember hover:underline">gubly.xyz</a>
+            </span>
+          </div>
           <h2
             className="display max-w-3xl text-[10vw] leading-[0.85] md:text-[7vw]"
             style={{ transform: `translateY(${(1 - progress) * 60}px)`, opacity: mapRange(progress, 0.1, 0.45, 0, 1) }}
