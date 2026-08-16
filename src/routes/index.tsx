@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import terrace from "@/assets/terrace.jpg";
 import spread from "@/assets/spread.jpg";
+import { GublyProtection } from "@/components/platzhirsch/GublyProtection";
 import { KitchenVideo } from "@/components/platzhirsch/KitchenVideo";
 import { Marquee } from "@/components/platzhirsch/Marquee";
 import { MenuSection } from "@/components/platzhirsch/MenuSection";
@@ -231,9 +232,35 @@ function InfoSection() {
             ))}
           </dl>
         </div>
-        <div className="mt-16 pt-6 border-t border-border/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+        <div className="mt-14 rounded-xl border border-ember/30 bg-card/80 p-5 sm:p-6 backdrop-blur-sm">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div className="space-y-1">
+              <div className="flex items-center gap-2">
+                <span className="inline-block h-2 w-2 rounded-full bg-ember" />
+                <span className="text-xs uppercase tracking-widest font-bold text-ember">
+                  Design & Concept Prototype © Gubly
+                </span>
+              </div>
+              <p className="text-xs text-muted-foreground max-w-2xl leading-relaxed">
+                All visual ideas, layouts, typography, animations, and code structure of this website are the intellectual property of <strong>Gubly</strong>. Any commercial use, reproduction, distribution, or unauthorized copying is strictly forbidden prior to purchasing a valid commercial license.
+              </p>
+            </div>
+            <a
+              href="https://gubly.xyz/"
+              target="_blank"
+              rel="noreferrer"
+              className="shrink-0 rounded-full border border-ember bg-ember/15 px-4 py-2 text-xs font-semibold text-ember hover:bg-ember hover:text-ember-foreground transition-all"
+            >
+              Visit Gubly.xyz ↗
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-10 pt-6 border-t border-border/40 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs uppercase tracking-[0.25em] text-muted-foreground">
           <p>Der Neue Platzhirsch · Berlin</p>
-          <p className="text-[10px] tracking-widest text-muted-foreground/60">Tradition & Zeitgeist</p>
+          <p className="text-[10px] tracking-widest text-muted-foreground/60">
+            Protected Prototype · <a href="https://gubly.xyz/" target="_blank" rel="noreferrer" className="underline hover:text-ember">gubly.xyz</a>
+          </p>
         </div>
       </div>
     </footer>
@@ -244,6 +271,7 @@ function InfoSection() {
 function Index() {
   return (
     <main className="bg-background">
+      <GublyProtection />
       <ScrollProgress />
       <Hero />
       <Marquee />
